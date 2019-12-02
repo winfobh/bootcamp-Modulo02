@@ -19,6 +19,8 @@ const upload = multer(multerConfig);
 routes.post('/users', UserController.store);
 routes.post('/sessions', SessionController.store);
 
+routes.get('/', (req, res) => res.send('Veio na boa! Tá rodando maluco'));
+
 // Acessivel com o Middlewares, tudo q esta depois desta linha
 routes.use(authMiddleware);
 
