@@ -22,7 +22,9 @@ routes.post('/sessions', SessionController.store);
 // Teste de rotas
 routes.get('/', (req, res) => res.send('Veio na boa! Tá rodando maluco'));
 routes.get('/juliene', (req, res) =>
-  res.send('Juliene sua linda, amor da minha vida!')
+  res.send(
+    'Juliene sua linda, amor da minha vida!<br/>Matheus meu filho querido! Laura minha tuquinha!'
+  )
 );
 
 // Acessivel com o Middlewares, tudo q esta depois desta linha
