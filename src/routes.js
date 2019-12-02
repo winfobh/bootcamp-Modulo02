@@ -23,7 +23,7 @@ routes.post('/sessions', SessionController.store);
 routes.get('/', (req, res) => res.send('Veio na boa! Tá rodando maluco'));
 routes.get('/juliene', (req, res) =>
   res.send(
-    'Juliene sua linda, amor da minha vida!<br/>Matheus meu filho querido! Laura minha tuquinha!'
+    'Juliene sua linda, amor da minha vida!/n Matheus meu filho querido! Laura minha tuquinha!'
   )
 );
 
