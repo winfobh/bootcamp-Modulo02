@@ -9,7 +9,6 @@
         "queue": "nodemon src/queue.js"
     },
     "dependencies": {
-<<<<<<< HEAD
         "@sentry/node": "5.9.0",
         "bcryptjs": "^2.4.3",
         "bee-queue": "^1.2.2",
@@ -23,19 +22,11 @@
         "multer": "^1.4.2",
         "nodemailer": "^6.3.1",
         "nodemailer-express-handlebars": "^3.1.0",
-=======
-        "bcryptjs": "^2.4.3",
-        "express": "^4.17.1",
-        "jsonwebtoken": "^8.5.1",
->>>>>>> f85fba0502a8c61dc5f2c2809476be933a84b885
         "pg": "^7.12.1",
         "pg-hstore": "^2.3.3",
         "sequelize": "^5.21.2",
         "typescript": "^3.6.4",
-<<<<<<< HEAD
         "youch": "^2.0.10",
-=======
->>>>>>> f85fba0502a8c61dc5f2c2809476be933a84b885
         "yup": "^0.27.0"
     },
     "devDependencies": {
