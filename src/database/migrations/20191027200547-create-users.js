@@ -36,7 +36,13 @@ module.exports = {
     });
   },
 
+<<<<<<< HEAD
   down: queryInterface => {
     return queryInterface.dropTable('users');
   },
+=======
+    down: queryInterface => {
+        return queryInterface.dropTable('users');
+    },
+>>>>>>> f85fba0502a8c61dc5f2c2809476be933a84b885
 };

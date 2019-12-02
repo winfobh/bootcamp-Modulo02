@@ -1,4 +1,5 @@
 import { Router } from 'express';
+<<<<<<< HEAD
 import multer from 'multer';
 import multerConfig from './config/multer';
 
@@ -11,6 +12,11 @@ import ScheduleController from './app/controllers/ScheduleController';
 import NotificationController from './app/controllers/NotificationController';
 import AvailableController from './app/controllers/AvailableController';
 
+=======
+
+import UserController from './app/controllers/UserController';
+import SessionController from './app/controllers/SessionController';
+>>>>>>> f85fba0502a8c61dc5f2c2809476be933a84b885
 import authMiddleware from './app/middlewares/auth';
 
 const routes = new Router();
@@ -33,9 +39,18 @@ routes.delete('/appointments/:id', AppointmentController.delete);
 
 routes.get('/schedule', ScheduleController.index);
 
+<<<<<<< HEAD
 routes.get('/notifications', NotificationController.index);
 routes.put('/notifications/:id', NotificationController.update);
 
 routes.post('/files', upload.single('file'), FileController.store);
+=======
+routes.post('/users', UserController.store);
+routes.post('/sessions', SessionController.store);
+
+routes.use(authMiddleware);
+
+routes.put('/users', UserController.update);
+>>>>>>> f85fba0502a8c61dc5f2c2809476be933a84b885
 
 export default routes;
