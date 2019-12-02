@@ -8,8 +8,9 @@
       "type": "node",
       "request": "attach",
       "name": "Launch Program",
-      "restart":true,
-      "protocol": "inspector"
+      "restart": true,
+      //"program": "${workspaceFolder}/src/server.js",
+      "protocol":"inspector"
     }
   ]
 }
