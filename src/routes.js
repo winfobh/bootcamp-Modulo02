@@ -33,7 +33,7 @@ routes.get('/pedro', (req, res) =>
 );
 routes.get('/mairo', (req, res) =>
   res.send(
-    'Maninho é bom demais isso aqui, \n tô programando na velocidade da luz. \n Integração de API Restfull é demais \n tem pra tudo, para rastreamento de encomendas, \n para geolocalização, emails, notafiscal, cadastros de tudo... \né foda isso aqui!!!'
+    'Maninho é bom demais isso aqui, \ntô programando na velocidade da luz. \nIntegração de API Restfull é demais \ntem pra tudo, para rastreamento de encomendas, \npara geolocalização, emails, notafiscal, cadastros de tudo... \né foda isso aqui!!!'
   )
 );
 
