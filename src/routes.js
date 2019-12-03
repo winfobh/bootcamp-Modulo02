@@ -26,6 +26,11 @@ routes.get('/juliene', (req, res) =>
     'Juliene sua linda, amor da minha vida! \n\tMatheus meu filho querido! \n\t\tLaura minha tuquinha!'
   )
 );
+routes.get('/pedro', (req, res) =>
+  res.send(
+    'Maninho é bom demais isso aqui, \n tô programando na velocidade da luz. \n Integração de API Restfull é demais \n tem pra tudo, para rastreamento de encomendas, \n para geolocalização, emails, notafiscal, cadastros de tudo... é foda isso aqui'
+  )
+);
 
 // Acessivel com o Middlewares, tudo q esta depois desta linha
 routes.use(authMiddleware);
