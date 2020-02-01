@@ -20,7 +20,9 @@ routes.post('/users', UserController.store);
 routes.post('/sessions', SessionController.store);
 
 // Teste de rotas
-routes.get('/', (req, res) => res.send('Veio na boa! Tá rodando maluco'));
+routes.get('/', (req, res) =>
+  res.send('Olá Warlem! Servidor rodando sem erro.')
+);
 routes.get('/juliene', (req, res) =>
   res.send(
     'Juliene sua linda, amor da minha vida! \n\tMatheus meu filho querido! \n\t\tLaura minha tuquinha!'
