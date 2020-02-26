@@ -16,8 +16,8 @@ import authMiddleware from './app/middlewares/auth';
 const routes = new Router();
 const upload = multer(multerConfig);
 
-routes.post('/users', UserController.store);
-routes.post('/sessions', SessionController.store);
+routes.post('/api/users', UserController.store);
+routes.post('/api/sessions', SessionController.store);
 
 // Teste de rotas
 routes.get('/', (req, res) =>
